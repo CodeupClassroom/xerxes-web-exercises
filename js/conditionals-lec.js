@@ -66,15 +66,15 @@ if (hasCowMan) {
 
 /** TO-DO: Let's expand our previous isItANumber function. Now I want to also return a string when we aren't passed a number. How do I refactor our function? */
 
-function isItANumber(parameter) {
-    if (typeof parameter === "number") { // !isNan(parseFloat(parameter)) && typeof parameter !== "string" is an alt condition that would work
-        return "Wow, that sure is a number alright.";
-        console.log("You'll never see this message! >:)");
-    } else {
-        return "Uh oh, that's not a number...";
-        console.log("Or this one either! >:)");
-    }
-}
+// function isItANumber(parameter) {
+//     if (typeof parameter === "number") { // !isNan(parseFloat(parameter)) && typeof parameter !== "string" is an alt condition that would work
+//         return "Wow, that sure is a number alright.";
+//         console.log("You'll never see this message! >:)");
+//     } else {
+//         return "Uh oh, that's not a number...";
+//         console.log("Or this one either! >:)");
+//     }
+// }
 
 
 // IF/ELSE IF/ELSE = A chain of if/else statements to give different results for different conditions.
@@ -123,47 +123,76 @@ console.log(isThisThirtyFive(35));
 console.log(isThisThirtyFive(36));
 console.log(isThisThirtyFive("Potato Soup"));
 
-// TERNARY OPERATOR: A operation to set a value based on boolean evaluation.
+// TERNARY EXPRESSION: An expression to set a value based on boolean evaluation.
 
-// var message = (booleanValue) ? "Operation was true." : "Operation was false.";
+// let message = (booleanValue) ? "Operation was true." : "Operation was false.";
 
 /** Consider the following statement: "Are we out of milk? If we are: I'll head to the store, but if we
- * do: I want to make a bowl of cereal." */
+ * do have milk: I want to make a bowl of cereal." */
 
-// How would we write this as a ternary operator?
+// How would we write this as a ternary expression?
 
-// var action = (doWeHaveMilk) ?
+let doWeHaveMilk = true;
+let action = (doWeHaveMilk === true) ? "Making a bowl of Count Chocula" : "Headed off to Randall's";
+console.log(action);
 
-/** TO-DO: Let's look back at the if/else version of our isItANumber function. Let's refactor our if/else as a ternary operator. */
-
-
+/** TO-DO: Let's look back at the if/else version of our isItANumber function. Let's refactor our if/else as a ternary expression. */
+function isItANumber(parameter) {
+    return (typeof parameter === "number") ? "Wow, that sure is a number alright." : "Uh oh, that's not a number...";
+}
 
 // SWITCH STATEMENT: A statement with multiple conditions that will trigger based on the value of a variable.
 
-// var color = prompt("What is your favorite color?").toLowerCase();
-//
-// switch(color) {
-//     case "green":
-//         alert("What a coincidence, that's my favorite!");
-//         break;
-//     case "orange":
-//         alert("That's my brother's favorite color!");
-//         break;
-//     default:
-//         alert(color + " is a weird color, my dude.");
-//         break;
-// }
+let color = prompt("What is your favorite color?").toLowerCase();
+
+switch(color) {
+    case "green":
+    case "purple":
+        alert("What a coincidence, that's my favorite!");
+        break;
+    case "orange":
+        alert("That's my brother's favorite color!");
+        break;
+    default:
+        alert(color + " is a weird color, my dude.");
+        break;
+}
 
 /** Consider the following sentence: "I don't have a cow, goat, or camel. I guess I'll have to go to the
  * store for milk." */
 
 // How would we write this as a switch statement?
 
-// var animal = ;
-// switch (animal) {
-//
-// }
+let animal = "dog";
+switch (animal) {
+    case "cow":
+        console.log("I'm milking Bessie");
+        break;
+    case "goat":
+        console.log("I'm milking Billie");
+        break;
+    case "camel":
+        console.log("Yes you can milk a camel.");
+        break;
+    default:
+        console.log("Headed off to Wegman's");
+        break;
+}
 
 /** TO-DO: Let's make a switch statement with a prompt for the user to input their favorite sandwich meat. If they like 'olive loaf' we should return an alert to congratulate them on their bold choice, and if they choose 'brisket' we should return a different alert: this one for congratulating them on the 'right' answer. All other responses should trigger an alert stating apathy. */
+
+let userLunchMeat = prompt("What's your favorite lunch meat?");
+
+switch (userLunchMeat) {
+    case "olive loaf":
+        alert("Ah, a bold choice.");
+        break;
+    case "brisket":
+        alert("Ah, a true scholar in art of sandwiches.");
+        break;
+    default:
+        alert("I mean... not bad. No complaints about " + userLunchMeat + ".");
+        break;
+}
 
 // Let's work on the exercise!
