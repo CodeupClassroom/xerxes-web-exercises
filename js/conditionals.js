@@ -36,10 +36,10 @@
 //
 // }
 
-console.log(analyzeColor('blue'));
-console.log(analyzeColor('red'));
-console.log(analyzeColor('cyan'));
-console.log(analyzeColor('Bob Ross'));
+// console.log(analyzeColor('blue'));
+// console.log(analyzeColor('red'));
+// console.log(analyzeColor('cyan'));
+// console.log(analyzeColor('Bob Ross'));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -54,7 +54,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
  */
 
-console.log(analyzeColor(randomColor));
+// console.log(analyzeColor(randomColor));
 
 /**
  * TODO: 3
@@ -80,6 +80,10 @@ function analyzeColor(color){
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+
+let userInput = prompt("Please enter a color");
+
+alert(analyzeColor(userInput));
 
 /* ########################################################################## */
 
