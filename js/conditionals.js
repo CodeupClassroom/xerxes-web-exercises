@@ -144,12 +144,12 @@ function calculateTotal(luckyNumber, total){
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-var luckyNumber = Math.floor(Math.random() * 6);
-let userInput = prompt("What is your total bill? ");
+// var luckyNumber = Math.floor(Math.random() * 6);
+// let userInput = prompt("What is your total bill? ");
 
 // calculateTotal(luckyNumber, userInput);
 
-alert("Your lucky number is " + luckyNumber + ". Your price before discount is " + userInput + ". price with discount is " + calculateTotal(luckyNumber, userInput) + ".");
+// alert("Your lucky number is " + luckyNumber + ". Your price before discount is " + userInput + ". price with discount is " + calculateTotal(luckyNumber, userInput) + ".");
 
 
 
@@ -172,3 +172,70 @@ alert("Your lucky number is " + luckyNumber + ". Your price before discount is "
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+// if(confirm("Would you like to enter a number?")){
+//     let userInput = parseInt(prompt("Please enter a number."));
+//
+//     if(!isNaN(userInput)) {
+//
+//         if (userInput % 2 === 0) {
+//             alert(userInput + " is even.");
+//         } else {
+//             alert(userInput + " is odd.");
+//         }
+//
+//         alert("Your number + 100 = " + (userInput + 100));
+//
+//         if (userInput >= 0) {
+//             alert("Your number is positive.");
+//         } else {
+//             alert("Your number is negative.")
+//         }
+//
+//     } else {
+//         alert("You did not enter a number. Please enter a number, next time. you entered a not a number.");
+//     }
+//
+// }
+
+function promptUserNumber(){
+
+    if(confirm("Would you like to enter a number?")){
+        let userInput = parseInt(prompt("Please enter a number."));
+
+        if(!isNaN(userInput)) {
+            alert(isEven(userInput));
+            alert(inputPlus100(userInput))
+            alert(isPositive(userInput))
+        } else {
+            alert("You did not enter a number. Please enter a number, next time. you entered a not a number.");
+        }
+
+    }
+
+}
+
+function isEven(userInput){
+    if (userInput % 2 === 0) {
+        return userInput + " is even.";
+    } else {
+        return userInput + " is odd.";
+    }
+}
+
+function inputPlus100(userInput){
+
+    return "Your number + 100 = " + (userInput + 100);
+
+}
+
+function isPositive(userInput){
+    if (userInput >= 0) {
+            return "Your number is positive.";
+        } else {
+            return "Your number is negative.";
+        }
+}
+
+
+promptUserNumber();
