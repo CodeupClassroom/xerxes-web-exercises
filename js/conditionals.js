@@ -36,10 +36,10 @@ function analyzeColor(color){
 
 }
 
-console.log(analyzeColor('blue'));
-console.log(analyzeColor('red'));
-console.log(analyzeColor('cyan'));
-console.log(analyzeColor('Bob Ross'));
+// console.log(analyzeColor('blue'));
+// console.log(analyzeColor('red'));
+// console.log(analyzeColor('cyan'));
+// console.log(analyzeColor('Bob Ross'));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -53,6 +53,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+
+console.log(analyzeColor(randomColor));
 
 /**
  * TODO: 3
