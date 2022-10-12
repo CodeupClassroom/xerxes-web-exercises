@@ -81,9 +81,9 @@ function analyzeColor(color){
  * function to show it to the user.
  */
 
-let userInput = prompt("Please enter a color");
+// let userInput = prompt("Please enter a color");
 
-alert(analyzeColor(userInput));
+// alert(analyzeColor(userInput));
 
 /* ########################################################################## */
 
@@ -106,6 +106,33 @@ alert(analyzeColor(userInput));
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+
+function calculateTotal(luckyNumber, total){
+    let discountedPrice;
+    if(luckyNumber === 0){
+        discountedPrice = total;
+    } else if(luckyNumber === 1){
+        discountedPrice = total - (total * .1);
+    } else if(luckyNumber === 2){
+        discountedPrice = total - (total * .25);
+    } else if(luckyNumber === 3) {
+        discountedPrice = total - (total * .35);
+    } else if(luckyNumber === 4) {
+        discountedPrice = total - (total * .5);
+    } else if(luckyNumber === 5) {
+        discountedPrice = 0;
+    }
+
+    return discountedPrice;
+}
+
+// console.log(calculateTotal(0, 100));
+// console.log(calculateTotal(1, 100));
+// console.log(calculateTotal(2, 100));
+// console.log(calculateTotal(3, 100));
+// console.log(calculateTotal(4, 100));
+// console.log(calculateTotal(5, 100));
+
 
 
 /**
