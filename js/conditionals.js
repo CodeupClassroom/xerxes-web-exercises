@@ -23,23 +23,23 @@
  * console.logging the function's return value
  */
 
-function analyzeColor(color){
+// function analyzeColor(color){
+//
+//     if(color === 'blue'){
+//         return "blue is the color of the sky";
+//     } else if(color === 'red') {
+//         return "Strawberries are red"
+//     } else {
+//         return "I don't know anything about " + color;
+//     }
+//
+//
+// }
 
-    if(color === 'blue'){
-        return "blue is the color of the sky";
-    } else if(color === 'red') {
-        return "Strawberries are red"
-    } else {
-        return "I don't know anything about " + color;
-    }
-
-
-}
-
-// console.log(analyzeColor('blue'));
-// console.log(analyzeColor('red'));
-// console.log(analyzeColor('cyan'));
-// console.log(analyzeColor('Bob Ross'));
+console.log(analyzeColor('blue'));
+console.log(analyzeColor('red'));
+console.log(analyzeColor('cyan'));
+console.log(analyzeColor('Bob Ross'));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -60,6 +60,19 @@ console.log(analyzeColor(randomColor));
  * TODO: 3
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+
+function analyzeColor(color){
+
+    switch(color){
+        case 'blue':
+            return "blue is the color of the sky";
+        case 'red':
+            return "Strawberries are red";
+        default:
+            return "I don't know anything about " + color;
+    }
+
+}
 
 /**
  * TODO: 4
