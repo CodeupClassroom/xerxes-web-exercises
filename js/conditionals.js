@@ -2,6 +2,7 @@
 
 /* ########################################################################## */
 
+
 /**
  * TODO: 1
  * Create a function named `analyzeColor` that accepts a string that is a color
@@ -21,6 +22,24 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
+
+function analyzeColor(color){
+
+    if(color === 'blue'){
+        return "blue is the color of the sky";
+    } else if(color === 'red') {
+        return "Strawberries are red"
+    } else {
+        return "I don't know anything about " + color;
+    }
+
+
+}
+
+console.log(analyzeColor('blue'));
+console.log(analyzeColor('red'));
+console.log(analyzeColor('cyan'));
+console.log(analyzeColor('Bob Ross'));
 
 // Don't change the next two lines!
 // These lines create two variables for you:
