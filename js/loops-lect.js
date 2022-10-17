@@ -70,15 +70,58 @@
 //     }
 // }
 
-for (var i = 1; i < 100; i++) {
+// for (var i = 1; i < 100; i++) {
+//
+//     if (i % 2 !== 0) {
+//         // number isn't even
+//         // odd numbers aren't as cool
+//         // skip the rest of the loop and continue with the next iteration
+//         continue;
+//     }
+//
+//     console.log('Here is a lovely even number: ' + i);
+// }
 
-    if (i % 2 !== 0) {
-        // number isn't even
-        // odd numbers aren't as cool
-        // skip the rest of the loop and continue with the next iteration
-        continue;
-    }
 
-    console.log('Here is a lovely even number: ' + i);
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
 }
 
+for(let i = 1; i <= 10; i++) {
+   let randNum = getRandom(20, 200);
+   if(randNum % 2 === 0){
+       console.log(randNum + " is Even");
+   } else {
+       console.log(randNum + " is Odd");
+   }
+}
+
+for(let i = 1; i <= 9; i++){
+    // console.log(i);
+    let finalOutput = '';
+    for (let j = 0; j < i; j++){
+        finalOutput += i;
+    }
+    console.log(finalOutput);
+}
+
+let userInput = prompt("Please enter an odd number between 1 and 50")
+
+if(userInput % 2 === 0){
+    alert("this is an even number try again")
+} else if(userInput > 50 || userInput < 1) {
+    alert("This number is out of the range 1 - 50");
+}
+
+do{
+    let userInput = prompt("Please enter an odd number between 1 and 50");
+
+    if(userInput % 2 === 0){
+        alert("this is an even number try again");
+    } else if(userInput > 50 || userInput < 1) {
+        alert("This number is out of the range 1 - 50 try again");
+    } else {
+        alert("input accepted");
+        break;
+    }
+} while(true)
