@@ -31,5 +31,9 @@
 
     console.log(newPlanets);
 
+    function buildString(){
+
+    }
+
 
 })();
