@@ -93,7 +93,7 @@ if (hasCowMan) {
 
 // How would we write this as a if/else if/else code block?
 let hasCrunchwrap = true;
-let hasBajaBlast = true;
+let hasBajaBlast = false;
 
 if (hasCrunchwrap && hasBajaBlast) {
     console.log("My order is complete");
