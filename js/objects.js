@@ -82,12 +82,12 @@
     ];
 
     shoppers.forEach(function(shopper){
-        console.log("Shopper: " + shopper.name);
-        console.log("Amount before discount: " + shopper.amount);
+        // console.log("Shopper: " + shopper.name);
+        // console.log("Amount before discount: " + shopper.amount);
         if(shopper.amount > 200){
-            console.log("Hey you get a  12% discount!!!!");
+            // console.log("Hey you get a  12% discount!!!!");
             shopper.amount = shopper.amount - (shopper.amount * .12)
-            console.log("Amount after discount " + shopper.amount);
+            // console.log("Amount after discount " + shopper.amount);
         }
     })
 
@@ -144,13 +144,13 @@
         }
     ];
 
-    console.log(books[0].title)
-    console.log(books[0].author.firstName)
-    console.log(books[0].author.lastName)
+    // console.log(books[0].title)
+    // console.log(books[0].author.firstName)
+    // console.log(books[0].author.lastName)
 
 
     /**
-     * TODO:
+     * TODOne:
      * Loop through the books array and output the following information about
      * each book:
      * - the book number (use the index of the book in the array)
@@ -173,6 +173,24 @@
      *      ---
      *      ...
      */
+
+    console.log("                   __..._   _...__\n" +
+        "              _..-\"      `Y`      \"-._\n" +
+        "              \\ Once upon |           /\n" +
+        "              \\\\  a time..|          //\n" +
+        "              \\\\\\         |         ///\n" +
+        "               \\\\\\ _..---.|.---.._ ///\n" +
+        "                \\\\`_..---.Y.---.._`//\n" +
+        "                 '`               `'")
+
+    books.forEach(function(book){
+        console.log("Book # "+ (books.indexOf(book) + 1))
+        // console.log("Book # "+ (index + 1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + " " +  book.author.lastName)
+        console.log("---");
+
+    });
 
     /**
      * Bonus:
