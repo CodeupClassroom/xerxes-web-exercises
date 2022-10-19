@@ -93,7 +93,7 @@
 
 
 
-    /** TODO:
+    /** TODOne:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
      * property. The author property should be an object with properties
@@ -105,6 +105,49 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    let books = [
+        {
+        title: "A Brief History of Time",
+        author: {
+            firstName: "Stephen",
+            lastName: "Hawking"
+            }
+        },
+        {
+            title: "Xenocide",
+            author: {
+                firstName: "Orson Scott",
+                lastName: "Card"
+            }
+        },
+        {
+            title: "The Fellowship of the Ring",
+            author: {
+                firstName: "JRR",
+                lastName: "Tolkien"
+            }
+        },
+        {
+            title: "Dune",
+            author: {
+                firstName: "Frank",
+                lastName: "Herbert"
+            }
+        },
+        {
+            title: "Oh The places you will go",
+            author: {
+                firstName: "Dr. ",
+                lastName: "Suess"
+            }
+        }
+    ];
+
+    console.log(books[0].title)
+    console.log(books[0].author.firstName)
+    console.log(books[0].author.lastName)
+
 
     /**
      * TODO:
