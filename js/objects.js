@@ -14,13 +14,19 @@
 
     let person = {
         firstName: "Cody",
-        lastName: "Hastings"
+        lastName: "Hastings",
+        sayHello: function(){
+            return "Hello from " + person.firstName + " " + person.lastName;
+        }
     }
     console.log(person.firstName);
     console.log(person.lastName);
 
+
+
+
     /**
-     * TODO:
+     * TODOne:
      * Add a sayHello method to the person object that returns a greeting using
      * the firstName and lastName properties.
      * console.log the returned message to check your work
@@ -28,6 +34,8 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+
+    console.log(person.sayHello());
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
