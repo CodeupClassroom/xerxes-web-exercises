@@ -13,5 +13,19 @@ let david = {
     age: "Old"
 }
 
-console.log(getPrice(potatoes));
-console.log(getPrice(david));
+// console.log(getPrice(potatoes));
+// console.log(getPrice(david));
+
+function getLongestString(arr) {
+    let longestStr = "";
+    for (let str of arr) {
+        if (str.length > longestStr.length) {
+            longestStr = str;
+        }
+    }
+    return longestStr;
+}
+
+const colors = ["Green", "Blue", "Periwinkle"];
+
+console.log(getLongestString(colors));
