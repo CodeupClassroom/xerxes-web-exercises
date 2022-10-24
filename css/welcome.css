@@ -1,5 +1,42 @@
-.fancy-header {
-    color: green;
-    text-decoration: underline;
+/*.fancy-header {*/
+/*    color: green;*/
+/*    text-decoration: underline;*/
+/*}*/
+
+/*#fancy-header {*/
+/*    color:purple;*/
+
+/*}*/
+
+/*p, h1{*/
+/*    color: cyan;*/
+/*}*/
+
+/*.extra-large {*/
+/*    font-size: 200px;*/
+/*}*/
+
+.container>div>h3 {
+    color: #e34f10;
+}
+
+/* unvisited link (:link) */
+a:link {
+    color:red;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:black;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:blue;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color:green;
 }
 
