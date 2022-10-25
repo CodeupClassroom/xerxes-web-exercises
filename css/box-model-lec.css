@@ -1,0 +1,24 @@
+.box {
+    display: inline;
+    box-sizing: content-box;
+    background: darkgreen;
+    color: azure;
+    font-size: 28px;
+    height: 250px;
+    width: 250px;
+    padding: 100px 10px 10px 10px;
+    /*padding-top: 10px;*/
+    /*padding-right: 15px;*/
+    /*padding-bottom: 65px;*/
+    /*padding-left: 75px;*/
+    /*border: 10px solid orangered;*/
+    border-width: 10px 50px;
+    border-style: solid;
+    border-color: aqua coral;
+    border-radius: 50%;
+    margin: 5px;
+}
+.container {
+    margin: 0;
+    padding: 0;
+}
