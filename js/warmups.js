@@ -84,5 +84,5 @@ function getTallestHamster(arr) {
     return tallest;
 }
 
-console.log(getTallestHamster(hamsters));
+// console.log(getTallestHamster(hamsters));
 
