@@ -1,0 +1,17 @@
+.flex-container {
+    background: rebeccapurple;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    background: gold;
+    height: 150px;
+    width: 200px;
+    border: 2px solid firebrick;
+    color: firebrick;
+}
