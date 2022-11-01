@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+nav {
+    background: darkgrey;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    display: inline-block;
+    padding: .5em;
+}
+
+a:hover {
+    color: #ef0;
+}
+
+.logo {
+    margin: auto;
+}
+
+.logo a {
+    font-family: "Work Sans", sans-serif;
+    font-size: 3em;
+    padding: .2em 0;
+}
