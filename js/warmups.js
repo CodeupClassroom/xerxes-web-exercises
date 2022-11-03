@@ -86,3 +86,12 @@ function getTallestHamster(arr) {
 
 // console.log(getTallestHamster(hamsters));
 
+function getAverageHeight(array) {
+    let totalHeight = 0;
+    for (let element of array) {
+        totalHeight += element.heightInMM;
+    }
+    return totalHeight / array.length;
+}
+
+console.log(getAverageHeight(hamsters));
