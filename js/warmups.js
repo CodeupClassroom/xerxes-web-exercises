@@ -64,6 +64,8 @@ const hamsters = [
     }
 ];
 
+hamsters[3].name
+
 function getTallestHamster(arr) {
     let tallest = {heightInMM: 0};
     arr.forEach(function(el){
@@ -83,6 +85,24 @@ function getTallestHamster(arr) {
     // }
     return tallest;
 }
+
+
+// for(Where it starts ; How far do I go  ; How much do I increase each iteration ){
+//
+// }
+
+function getTallestHamster2(arr){
+    let tallest = {heightInMM: 0};
+    for (let i = 0; i < arr.length; i++){
+
+
+        if (arr[i].heightInMM > tallest.heightInMM) {
+            tallest = arr[i];
+        }
+    }
+    return tallest;
+}
+
 
 // console.log(getTallestHamster(hamsters));
 
