@@ -2,3 +2,4 @@
 *.iml
 .DS_STORE
 codys_super_secret
+js/keys.js
