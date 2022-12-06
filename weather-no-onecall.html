@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather no Onecall</title>
+</head>
+<body>
+<h1>Check the console</h1>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+<script>
+    let lat = 37.5665;
+    let long = 126.9780;
+    $.get("http://api.openweathermap.org/data/2.5/forecast?lat="+ lat +"&lon="+ long +"&appid=" + OWM_KEY + "&units=metric").done(function(data) {
+        let reports = data.list;
+        for(let i = 0; i < reports.length; i += 8) {
+            // should get 5 objects back
+            console.log(reports[i]);
+        }
+    });
+</script>
+</body>
+</html>
